@@ -1,7 +1,7 @@
 {
   "name": "recipes-front",
   "version": "0.0.0",
-  "description": "Small description for recipes-front goes here",
+  "description": "Front for the emberjs workshop.",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -20,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
+    "ember-bootstrap": "0.0.5",
     "ember-cli": "0.2.0",
     "ember-cli-app-version": "0.3.2",
     "ember-cli-babel": "^4.0.0",
