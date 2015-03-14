@@ -1,0 +1,28 @@
+<div class="list-group">
+
+  {{#each model as |recipe|}}
+
+    {{#link-to "recipes.show"
+               recipe
+               class="list-group-item"}}
+      <h4 class="list-group-item-heading">
+        {{recipe.name}}
+      </h4>
+      <p class="list-group-item-text">
+        {{recipe.description}}
+      </p>
+    {{/link-to}}
+
+  {{else}}
+
+    {{#link-to "recipes.new" class="list-group-item"}}
+      <h4 class="list-group-item-heading">
+        There are no recipes
+      </h4>
+      <p class="list-group-item-text">
+          Create one
+      </p>
+    {{/link-to}}
+
+  {{/each}}
+</div>

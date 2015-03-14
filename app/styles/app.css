@@ -4,5 +4,8 @@ body {
 
 .recipe-template {
     padding: 40px 15px;
+}
+
+.recipe-template .centered {
     text-align: center;
 }

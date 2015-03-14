@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('recipes', function() {
+    this.route('new');
+    this.route('show', {path: ':recipe_id'});
+  });
 });
 
 export default Router;
